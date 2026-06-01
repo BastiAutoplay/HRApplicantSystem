@@ -8,7 +8,7 @@ namespace HRApplicantSystem.Database
     {
         // ⚠️ Change "Admin1234" to YOUR MySQL root password
         private static string connectionString =
-            "Server=localhost;Database=hr_applicant_system;Uid=root;Pwd=WgPtMaCgR2;";
+            "Server=localhost;Database=hr_applicant_system;Uid=root;Admin1234;";
 
         public static MySqlConnection GetConnection()
         {
