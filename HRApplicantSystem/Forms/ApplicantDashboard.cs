@@ -133,7 +133,9 @@ namespace HRApplicantSystem.Forms
 
         private void btnJobs_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Job Vacancies - Coming Soon!", "Info");
+            JobVacanciesForm jobsForm = new JobVacanciesForm(
+                _applicantAccountID, _applicantID);
+            jobsForm.ShowDialog();
         }
 
         private void btnApplication_Click(object sender, EventArgs e)
