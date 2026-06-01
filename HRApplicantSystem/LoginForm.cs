@@ -95,12 +95,9 @@ namespace HRApplicantSystem
                     appReader.Close();
                     conn.Close();
 
-                    MessageBox.Show("Welcome back!",
-                                   "Login Successful",
-                                   MessageBoxButtons.OK,
-                                   MessageBoxIcon.Information);
-
-                    // We'll open Applicant Dashboard here later
+                    ApplicantDashboard dashboard = new ApplicantDashboard(accountID);
+                    dashboard.Show();
+                    this.Hide();
                     return;
                 }
 
@@ -125,6 +122,11 @@ namespace HRApplicantSystem
         {
             RegisterForm registerForm = new RegisterForm();
             registerForm.ShowDialog();
+        }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
