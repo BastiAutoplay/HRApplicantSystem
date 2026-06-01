@@ -126,7 +126,9 @@ namespace HRApplicantSystem.Forms
 
         private void btnProfile_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("My Profile - Coming Soon!", "Info");
+            ApplicantProfileForm profileForm = new ApplicantProfileForm(
+                _applicantAccountID, _applicantID);
+            profileForm.ShowDialog();
         }
 
         private void btnJobs_Click(object sender, EventArgs e)
