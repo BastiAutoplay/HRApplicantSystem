@@ -1,4 +1,7 @@
-﻿using System;
+﻿using HRApplicantSystem.Database;
+using HRApplicantSystem.Forms;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,8 +10,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
-using HRApplicantSystem.Database;
 
 namespace HRApplicantSystem
 {
@@ -122,8 +123,8 @@ namespace HRApplicantSystem
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            // We'll open Registration form here later
-            MessageBox.Show("Registration form coming soon!", "Info");
+            RegisterForm registerForm = new RegisterForm();
+            registerForm.ShowDialog();
         }
     }
 }
