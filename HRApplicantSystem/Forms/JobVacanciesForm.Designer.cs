@@ -2,6 +2,22 @@
 {
     partial class JobVacanciesForm
     {
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label lblSearch;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.ListView lvJobs;
+        private System.Windows.Forms.Label lblDetails;
+        private System.Windows.Forms.RichTextBox rtbDetails;
+        private System.Windows.Forms.Button btnApply;
+        private System.Windows.Forms.Button btnBack;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+
         /// <summary>
         /// Required designer variable.
         /// </summary>
@@ -92,6 +108,7 @@
             this.btnClear.TabIndex = 4;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // lvJobs
             // 
@@ -206,20 +223,6 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Label lblSearch;
-        private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.Button btnClear;
-        private System.Windows.Forms.ListView lvJobs;
-        private System.Windows.Forms.Label lblDetails;
-        private System.Windows.Forms.RichTextBox rtbDetails;
-        private System.Windows.Forms.Button btnApply;
-        private System.Windows.Forms.Button btnBack;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
-        private System.Windows.Forms.ColumnHeader columnHeader4;
-        private System.Windows.Forms.ColumnHeader columnHeader5;
+
     }
 }

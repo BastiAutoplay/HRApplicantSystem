@@ -140,7 +140,8 @@ namespace HRApplicantSystem.Forms
 
         private void btnApplication_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("My Application - Coming Soon!", "Info");
+            MyApplicationForm appForm = new MyApplicationForm(_applicantID);
+            appForm.ShowDialog();
         }
 
         private void btnStatus_Click(object sender, EventArgs e)

@@ -17,6 +17,11 @@ namespace HRApplicantSystem.Forms
         private int _applicantAccountID;
         private int _applicantID;
         private int _selectedJobID = -1;
+
+        public JobVacanciesForm()
+        {
+            InitializeComponent();
+        }
         public JobVacanciesForm(int applicantAccountID, int applicantID)
         {
             InitializeComponent();
