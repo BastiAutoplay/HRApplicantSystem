@@ -108,6 +108,18 @@
     <Compile Include="Forms\ApplicantProfileForm.Designer.cs">
       <DependentUpon>ApplicantProfileForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\HRApplicantListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HRApplicantListForm.Designer.cs">
+      <DependentUpon>HRApplicantListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HRApplicantReviewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HRApplicantReviewForm.Designer.cs">
+      <DependentUpon>HRApplicantReviewForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\JobVacanciesForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +151,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ApplicantProfileForm.resx">
       <DependentUpon>ApplicantProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HRApplicantListForm.resx">
+      <DependentUpon>HRApplicantListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HRApplicantReviewForm.resx">
+      <DependentUpon>HRApplicantReviewForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\JobVacanciesForm.resx">
       <DependentUpon>JobVacanciesForm.cs</DependentUpon>
