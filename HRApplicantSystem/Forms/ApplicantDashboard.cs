@@ -37,7 +37,8 @@ namespace HRApplicantSystem.Forms
 
         private void btnDocuments_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("My Documents - Coming Soon!", "Info");
+            MyDocumentsForm docsForm = new MyDocumentsForm(_applicantID);
+            docsForm.ShowDialog();
         }
 
         private void ApplicantDashboard_Load(object sender, EventArgs e)
