@@ -42,6 +42,8 @@
             this.btnHiringDecision = new System.Windows.Forms.Button();
             this.btnReports = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.btnScreening = new System.Windows.Forms.Button();
+            this.btnInterviewSched = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblWelcome
@@ -157,7 +159,7 @@
             // 
             this.btnInterviewEval.BackColor = System.Drawing.Color.SteelBlue;
             this.btnInterviewEval.ForeColor = System.Drawing.Color.White;
-            this.btnInterviewEval.Location = new System.Drawing.Point(159, 318);
+            this.btnInterviewEval.Location = new System.Drawing.Point(159, 382);
             this.btnInterviewEval.Name = "btnInterviewEval";
             this.btnInterviewEval.Size = new System.Drawing.Size(169, 48);
             this.btnInterviewEval.TabIndex = 10;
@@ -169,7 +171,7 @@
             // 
             this.btnHiringDecision.BackColor = System.Drawing.Color.SteelBlue;
             this.btnHiringDecision.ForeColor = System.Drawing.Color.White;
-            this.btnHiringDecision.Location = new System.Drawing.Point(442, 318);
+            this.btnHiringDecision.Location = new System.Drawing.Point(442, 382);
             this.btnHiringDecision.Name = "btnHiringDecision";
             this.btnHiringDecision.Size = new System.Drawing.Size(169, 48);
             this.btnHiringDecision.TabIndex = 11;
@@ -181,7 +183,7 @@
             // 
             this.btnReports.BackColor = System.Drawing.Color.SteelBlue;
             this.btnReports.ForeColor = System.Drawing.Color.White;
-            this.btnReports.Location = new System.Drawing.Point(159, 411);
+            this.btnReports.Location = new System.Drawing.Point(159, 460);
             this.btnReports.Name = "btnReports";
             this.btnReports.Size = new System.Drawing.Size(169, 48);
             this.btnReports.TabIndex = 12;
@@ -193,7 +195,7 @@
             // 
             this.btnLogout.BackColor = System.Drawing.Color.Red;
             this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(442, 411);
+            this.btnLogout.Location = new System.Drawing.Point(442, 460);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.Size = new System.Drawing.Size(169, 48);
             this.btnLogout.TabIndex = 13;
@@ -201,12 +203,38 @@
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
+            // btnScreening
+            // 
+            this.btnScreening.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnScreening.ForeColor = System.Drawing.Color.White;
+            this.btnScreening.Location = new System.Drawing.Point(159, 307);
+            this.btnScreening.Name = "btnScreening";
+            this.btnScreening.Size = new System.Drawing.Size(169, 48);
+            this.btnScreening.TabIndex = 14;
+            this.btnScreening.Text = "Screening";
+            this.btnScreening.UseVisualStyleBackColor = false;
+            this.btnScreening.Click += new System.EventHandler(this.btnScreening_Click);
+            // 
+            // btnInterviewSched
+            // 
+            this.btnInterviewSched.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnInterviewSched.ForeColor = System.Drawing.Color.White;
+            this.btnInterviewSched.Location = new System.Drawing.Point(442, 302);
+            this.btnInterviewSched.Name = "btnInterviewSched";
+            this.btnInterviewSched.Size = new System.Drawing.Size(169, 53);
+            this.btnInterviewSched.TabIndex = 15;
+            this.btnInterviewSched.Text = "Interview Scheduling";
+            this.btnInterviewSched.UseVisualStyleBackColor = false;
+            this.btnInterviewSched.Click += new System.EventHandler(this.btnInterviewSched_Click);
+            // 
             // HRDashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(778, 544);
+            this.Controls.Add(this.btnInterviewSched);
+            this.Controls.Add(this.btnScreening);
             this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnReports);
             this.Controls.Add(this.btnHiringDecision);
@@ -248,5 +276,7 @@
         private System.Windows.Forms.Button btnHiringDecision;
         private System.Windows.Forms.Button btnReports;
         private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnScreening;
+        private System.Windows.Forms.Button btnInterviewSched;
     }
 }

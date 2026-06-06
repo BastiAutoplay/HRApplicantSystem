@@ -82,6 +82,20 @@ namespace HRApplicantSystem.Forms
             MessageBox.Show("Job Vacancy Management - Coming Soon!", "Info");
         }
 
+        private void btnScreening_Click(object sender, EventArgs e)
+        {
+            ScreeningForm screenForm = new ScreeningForm(_userID);
+            screenForm.ShowDialog();
+            LoadSummary();
+        }
+
+        private void btnInterviewSched_Click(object sender, EventArgs e)
+        {
+            InterviewSchedulingForm schedForm = new InterviewSchedulingForm(_userID);
+            schedForm.ShowDialog();
+            LoadSummary();
+        }
+
         private void btnInterviewEval_Click(object sender, EventArgs e)
         {
             InterviewEvaluationForm evalForm = new InterviewEvaluationForm(_userID);

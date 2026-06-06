@@ -150,6 +150,12 @@
     <Compile Include="Forms\InterviewEvaluationForm.Designer.cs">
       <DependentUpon>InterviewEvaluationForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\InterviewSchedulingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\InterviewSchedulingForm.Designer.cs">
+      <DependentUpon>InterviewSchedulingForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\JobVacanciesForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +185,12 @@
     </Compile>
     <Compile Include="Forms\ReportsForm.Designer.cs">
       <DependentUpon>ReportsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ScreeningForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ScreeningForm.Designer.cs">
+      <DependentUpon>ScreeningForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -215,6 +227,9 @@
     <EmbeddedResource Include="Forms\InterviewEvaluationForm.resx">
       <DependentUpon>InterviewEvaluationForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\InterviewSchedulingForm.resx">
+      <DependentUpon>InterviewSchedulingForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\JobVacanciesForm.resx">
       <DependentUpon>JobVacanciesForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -229,6 +244,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ReportsForm.resx">
       <DependentUpon>ReportsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ScreeningForm.resx">
+      <DependentUpon>ScreeningForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
