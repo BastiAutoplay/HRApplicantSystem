@@ -36,13 +36,13 @@
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnClear = new System.Windows.Forms.Button();
             this.lvApplicants = new System.Windows.Forms.ListView();
-            this.btnReview = new System.Windows.Forms.Button();
-            this.btnBack = new System.Windows.Forms.Button();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnReview = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblTitle
@@ -135,26 +135,7 @@
             this.lvApplicants.TabIndex = 7;
             this.lvApplicants.UseCompatibleStateImageBehavior = false;
             this.lvApplicants.View = System.Windows.Forms.View.Details;
-            // 
-            // btnReview
-            // 
-            this.btnReview.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnReview.ForeColor = System.Drawing.Color.White;
-            this.btnReview.Location = new System.Drawing.Point(18, 545);
-            this.btnReview.Name = "btnReview";
-            this.btnReview.Size = new System.Drawing.Size(181, 36);
-            this.btnReview.TabIndex = 8;
-            this.btnReview.Text = "Review Applicant";
-            this.btnReview.UseVisualStyleBackColor = false;
-            // 
-            // btnBack
-            // 
-            this.btnBack.Location = new System.Drawing.Point(279, 545);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(90, 36);
-            this.btnBack.TabIndex = 9;
-            this.btnBack.Text = "Back";
-            this.btnBack.UseVisualStyleBackColor = true;
+            this.lvApplicants.SelectedIndexChanged += new System.EventHandler(this.lvApplicants_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -179,6 +160,28 @@
             // 
             this.columnHeader5.Text = "Status";
             this.columnHeader5.Width = 120;
+            // 
+            // btnReview
+            // 
+            this.btnReview.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnReview.ForeColor = System.Drawing.Color.White;
+            this.btnReview.Location = new System.Drawing.Point(18, 545);
+            this.btnReview.Name = "btnReview";
+            this.btnReview.Size = new System.Drawing.Size(181, 36);
+            this.btnReview.TabIndex = 8;
+            this.btnReview.Text = "Review Applicant";
+            this.btnReview.UseVisualStyleBackColor = false;
+            this.btnReview.Click += new System.EventHandler(this.btnReview_Click);
+            // 
+            // btnBack
+            // 
+            this.btnBack.Location = new System.Drawing.Point(279, 545);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(90, 36);
+            this.btnBack.TabIndex = 9;
+            this.btnBack.Text = "Back";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // HRApplicantListForm
             // 

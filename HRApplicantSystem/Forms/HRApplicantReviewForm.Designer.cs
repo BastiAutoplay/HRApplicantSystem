@@ -187,6 +187,7 @@
             this.btnStartReview.TabIndex = 13;
             this.btnStartReview.Text = "Start Review";
             this.btnStartReview.UseVisualStyleBackColor = false;
+            this.btnStartReview.Click += new System.EventHandler(this.btnStartReview_Click);
             // 
             // btnShortlist
             // 
@@ -196,6 +197,7 @@
             this.btnShortlist.TabIndex = 14;
             this.btnShortlist.Text = "Shortlist Applicant";
             this.btnShortlist.UseVisualStyleBackColor = true;
+            this.btnShortlist.Click += new System.EventHandler(this.btnShortlist_Click);
             // 
             // btnReject
             // 
@@ -207,6 +209,7 @@
             this.btnReject.TabIndex = 15;
             this.btnReject.Text = "Reject Applicant";
             this.btnReject.UseVisualStyleBackColor = false;
+            this.btnReject.Click += new System.EventHandler(this.btnReject_Click);
             // 
             // btnBack
             // 
@@ -216,6 +219,7 @@
             this.btnBack.TabIndex = 16;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // HRApplicantReviewForm
             // 

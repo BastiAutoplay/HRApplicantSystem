@@ -64,15 +64,15 @@ namespace HRApplicantSystem
                 {
                     string fullName = hrReader["FullName"].ToString();
                     int roleID = Convert.ToInt32(hrReader["RoleID"]);
+                    int userID = Convert.ToInt32(hrReader["UserID"]);
                     hrReader.Close();
                     conn.Close();
 
-                    MessageBox.Show("Welcome, " + fullName + "!",
-                                   "Login Successful",
-                                   MessageBoxButtons.OK,
-                                   MessageBoxIcon.Information);
-
-                    // We'll open HR Dashboard here later
+                    HRLoginForm hrLogin = new HRLoginForm();
+                    // Actually open HR Dashboard directly since already logged in
+                    HRDashboardForm dashboard = new HRDashboardForm(userID, roleID, fullName);
+                    dashboard.Show();
+                    this.Hide();
                     return;
                 }
 
