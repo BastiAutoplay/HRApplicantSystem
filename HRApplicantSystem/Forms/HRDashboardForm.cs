@@ -84,25 +84,22 @@ namespace HRApplicantSystem.Forms
 
         private void btnInterviewEval_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Interview Evaluation - Coming Soon!", "Info");
+            InterviewEvaluationForm evalForm = new InterviewEvaluationForm(_userID);
+            evalForm.ShowDialog();
+            LoadSummary();
         }
 
         private void btnHiringDecision_Click(object sender, EventArgs e)
         {
-            // Only HR Manager and Admin can access this
-            if (_roleID == 3)
-            {
-                MessageBox.Show("Access Denied. Only HR Manager or Admin " +
-                                "can make hiring decisions.", "Access Denied",
-                                MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-            MessageBox.Show("Hiring Decision - Coming Soon!", "Info");
+            HiringDecisionForm decisionForm = new HiringDecisionForm(_userID, _roleID);
+            decisionForm.ShowDialog();
+            LoadSummary();
         }
 
         private void btnReports_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Reports - Coming Soon!", "Info");
+            ReportsForm reportsForm = new ReportsForm();
+            reportsForm.ShowDialog();
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
