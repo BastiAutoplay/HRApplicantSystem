@@ -162,6 +162,12 @@
     <Compile Include="Forms\JobVacanciesForm.Designer.cs">
       <DependentUpon>JobVacanciesForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\JobVacancyManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\JobVacancyManagementForm.Designer.cs">
+      <DependentUpon>JobVacancyManagementForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\MyApplicationForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -232,6 +238,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\JobVacanciesForm.resx">
       <DependentUpon>JobVacanciesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\JobVacancyManagementForm.resx">
+      <DependentUpon>JobVacancyManagementForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MyApplicationForm.resx">
       <DependentUpon>MyApplicationForm.cs</DependentUpon>

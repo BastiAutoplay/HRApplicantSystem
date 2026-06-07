@@ -79,7 +79,8 @@ namespace HRApplicantSystem.Forms
 
         private void btnJobVacancies_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Job Vacancy Management - Coming Soon!", "Info");
+            JobVacancyManagementForm jobForm = new JobVacancyManagementForm();
+            jobForm.ShowDialog();
         }
 
         private void btnScreening_Click(object sender, EventArgs e)
