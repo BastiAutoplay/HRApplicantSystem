@@ -1,0 +1,53 @@
+AI USAGE IN THIS PROJECT
+HR Applicant Processing System
+================================
+
+Our team used AI assistance (Claude by Anthropic) during the development
+of this capstone project in the following ways:
+
+1. LEARNING AND UNDERSTANDING
+   - AI was used to explain C# Windows Forms concepts to team members.
+   - AI helped us understand how MySQL database connections work in C#
+     and how to write SQL queries properly.
+   - AI explained object-oriented programming concepts like constructors,
+     methods, and passing data between forms.
+
+2. CODE GUIDANCE
+   - AI guided us step by step in writing code for each screen/form.
+   - All code was reviewed, typed, and tested by team members personally.
+   - AI helped us debug errors and understand why certain errors occurred.
+   - AI did not write the entire project automatically — each member
+     was guided through their assigned screens individually.
+
+3. DATABASE DESIGN
+   - AI helped us plan and design the 15-table database schema based
+     on the project requirements.
+   - AI explained relationships between tables (foreign keys, joins)
+     and how they apply to our system.
+
+4. DOCUMENTATION
+   - AI assisted in creating the flowchart and structuring
+     the user manual layout.
+   - Final documentation content was reviewed and approved by the team.
+
+5. WHAT AI DID NOT DO
+   - AI did not automatically generate and submit the full project.
+   - Each team member personally committed their own assigned code
+     to the GitHub repository.
+   - All decisions regarding system design and features were made
+     by the team based on the given requirements.
+
+TOOLS USED:
+- Claude (claude.ai) by Anthropic — for coding guidance and learning
+- Visual Studio 2022 — for C# Windows Forms development
+- MySQL Workbench — for database management
+- GitHub — for version control and team collaboration
+
+================================
+Submitted by: [Group 8]
+Members:
+  - [Sebastian V. Olivenza]
+  - [Kyle Zanie T. Paras]
+  - [Kurt Kevin A. Policarpio]
+  - [Mark Christian Posadas]
+================================
